@@ -30,15 +30,17 @@ public class guru99ex {
 		}else {
 			System.out.println("Title incorrect");
 		}
+		
 		//enter email address and password
 		driver.findElement(By.id("email")).sendKeys("pm@gmail.com");;
 		driver.findElement(By.name("passwd")).sendKeys("12345");
 		
 		//Click on Sign in button
-		driver.findElement(By.name("SubmitLogin")).submit();;
+		driver.findElement(By.name("SubmitLogin")).submit();
 		
 		//Verify if user is successfully logged in using ClassName
 		driver.findElement(By.className("error-copy"));
+		
 		System.out.println("login test passed");
 				
 		driver.close();
